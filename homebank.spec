@@ -1,7 +1,7 @@
-Summary:	Home Bank - free easy personal accounting for all
+Summary:	HomeBank - free easy personal accounting for all
 Name:		homebank
 Version:	3.8
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://homebank.free.fr/public/%{name}-%{version}.tar.gz
