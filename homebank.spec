@@ -1,12 +1,11 @@
 Summary:	HomeBank - free easy personal accounting for all
 Name:		homebank
-Version:	3.8
-Release:	2
+Version:	4.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://homebank.free.fr/public/%{name}-%{version}.tar.gz
-# Source0-md5:	a4abe0d0bd7f5fbd8b92fd596bf7da4f
-Patch0:		%{name}-configure.patch
+# Source0-md5:	b6f3c01d27cf476e4ae74eb56e06bc00
 URL:		http://homebank.free.fr
 BuildRequires:	atk-devel
 BuildRequires:	cairo-devel
@@ -28,10 +27,9 @@ powerful report tools based on filtering and graphical charts.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
-%{__glib_gettextize}
+%{__intltoolize} --force
 %{__aclocal}
 %{__autoconf}
 %{__automake}
