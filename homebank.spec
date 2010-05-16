@@ -8,12 +8,15 @@ Source0:	http://homebank.free.fr/public/%{name}-%{version}.tar.gz
 # Source0-md5:	b6f3c01d27cf476e4ae74eb56e06bc00
 URL:		http://homebank.free.fr
 BuildRequires:	atk-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	cairo-devel
-BuildRequires:	desktop-file-utils
-BuildRequires:	gettext
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
+BuildRequires:	intltool
 BuildRequires:	libofx-devel
 BuildRequires:	perl(XML::Parser)
+BuildRequires:	pkgconfig
 Requires(post,postun):	desktop-file-utils
 Requires(post,postun):	hicolor-icon-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
