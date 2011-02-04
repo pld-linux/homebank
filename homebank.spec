@@ -1,7 +1,7 @@
 Summary:	HomeBank - free easy personal accounting for all
 Name:		homebank
 Version:	4.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://homebank.free.fr/public/%{name}-%{version}.tar.gz
@@ -18,6 +18,7 @@ BuildRequires:	libofx-devel
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig
 Requires(post,postun):	desktop-file-utils
+Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
